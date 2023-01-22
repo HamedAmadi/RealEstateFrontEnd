@@ -1,0 +1,22 @@
+@import '../../styles/theme-variables.scss';
+
+.add-advertise {
+  min-height: calc(100vh - 72px);
+  padding-bottom: 40px;
+  @include themify($themes) {
+    background: themed('bodyBackground');
+    color: themed('textColor');
+  }
+
+  .map-section {
+    margin-top: 10px;
+  }
+
+  .map-frame {
+    padding: 16px;
+    border-radius: 10px;
+    @include themify($themes) {
+    background: themed('headerBackground');
+  }
+  }
+}

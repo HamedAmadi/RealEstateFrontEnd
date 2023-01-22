@@ -1,0 +1,43 @@
+@import '../../styles/theme-variables.scss';
+
+.advertise {
+  min-height: calc(100vh - 72px);
+  padding-bottom: 40px;
+
+  @include themify($themes) {
+    color: themed('textColor');
+    background: themed('bodyBackground');
+  }
+
+  .title {
+    padding-bottom: 4px;
+    @include themify($themes) {
+    color: themed('textColor');
+    }
+  }
+
+  .mobile {
+    padding: 16px;
+    border-radius: 10px;
+    @include themify($themes) {
+    background: themed('headerBackground');
+  }
+  }
+  .address, .description {
+    padding: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    @include themify($themes) {
+    background: themed('headerBackground');
+  }
+  }
+
+  .map-frame {
+    padding: 16px;
+    border-radius: 10px;
+    @include themify($themes) {
+    background: themed('headerBackground');
+  }
+  }
+
+}

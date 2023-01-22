@@ -1,0 +1,7 @@
+@import '../../styles/theme-variables.scss';
+
+.user-widget {
+  @include themify($themes) {
+    color: themed('textColor');
+  }
+}

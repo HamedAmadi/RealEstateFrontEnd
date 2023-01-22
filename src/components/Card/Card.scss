@@ -1,0 +1,19 @@
+@import '../../styles/theme-variables.scss';
+
+.card {
+  @include themify($themes) {
+    color: themed('textColor');
+    background: themed('headerBackground');
+  }
+
+  .card-body {
+    p {
+      height: 48px;
+      margin-bottom: 0;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../styles/theme-variables.scss';
+
+.edit-advertise {
+  .map-frame {
+    padding: 16px;
+    border-radius: 10px;
+    @include themify($themes) {
+    background: themed('headerBackground');
+  }
+  }
+}

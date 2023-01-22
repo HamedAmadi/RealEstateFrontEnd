@@ -1,0 +1,47 @@
+@import '../../styles/theme-variables.scss';
+
+.input-wrapper {
+  margin: 10px auto 0;
+
+  .text-input {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    outline: none !important;
+    padding: 8px 16px 8px;
+    font-size: 14px;
+
+    @include themify($themes) {
+      background: themed('headerBackground');
+      color: themed('textColor');
+    }
+
+    &:disabled {
+      background-color: #e1e1e1;
+      cursor: no-drop;
+    }
+  }
+
+  .text-input:-webkit-autofill,
+  .text-input:-webkit-autofill:hover,
+  .text-input:-webkit-autofill:focus,
+  .text-input:-webkit-autofill:active {
+    @include themify($themes) {
+      border: 0;
+      -webkit-text-fill-color: themed('textColor');
+      color: themed('textColor');
+      box-shadow: 0 0 0 50px themed('headerBackground') inset;
+    }
+  }
+
+  span.notice {
+    font-size: 12px;
+  }
+
+  .error-message {
+    font-size: 12px;
+    color: #ff0000;
+    padding: 0;
+  }
+}

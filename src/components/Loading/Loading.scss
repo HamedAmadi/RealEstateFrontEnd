@@ -1,0 +1,8 @@
+@import '../../styles/theme-variables.scss';
+
+.my-spinner {
+  @include themify($themes) {
+    background: themed('bodyBackground');
+    color: themed('textColor');
+  }
+}

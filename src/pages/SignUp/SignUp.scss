@@ -1,0 +1,20 @@
+@import '../../styles/theme-variables.scss';
+
+.signup {
+  min-height: calc(100vh - 72px);
+
+  @include themify($themes) {
+    background: themed('bodyBackground');
+    color: themed('textColor');
+  }
+  .signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+
+    .solid {
+      width: 100%;
+      padding: 8px;
+      margin-top: 24px;
+    }
+  }
+}

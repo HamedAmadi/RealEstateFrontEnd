@@ -1,0 +1,18 @@
+@font-face {
+  font-family: IRANSans-FaNum;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('./assets/fonts/IRANSans/_persian-number/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
+    url('./assets/fonts/IRANSans/_persian-number/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
+}
+
+body {
+  direction: rtl !important;
+  font-family: IRANSans-FaNum, sans-serif !important;
+
+  a {
+    text-decoration: none !important;
+    color: inherit;
+  }
+}

@@ -1,0 +1,18 @@
+@import '../../styles/theme-variables.scss';
+
+.map-wrapper {
+  position: relative;
+  height: 325px;
+  overflow: hidden;
+
+  .map-container {
+    position: relative!important;
+    height: 345px;
+  }
+  .leaflet-tile {
+    @include themify($themes) {
+      background: themed('bodyBackground');
+      filter: themed('mapFilter');
+    }
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../styles/theme-variables.scss';
+
+.home {
+  min-height: calc(100vh - 72px);
+  padding-bottom: 40px;
+
+  @include themify($themes) {
+    color: themed('textColor');
+    background: themed('bodyBackground');
+  }
+}
