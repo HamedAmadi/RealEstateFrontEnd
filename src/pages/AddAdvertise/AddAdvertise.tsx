@@ -51,7 +51,7 @@ const AddAdvertise: FC = () => {
               <div className="map-section">
                 <div className='d-block fw-bold text-secondary mx-2 mb-1'>موقعیت</div>
                 <div className="map-frame">
-                  <Map getMapLocation={setMapLocation} latitude={latitude} longitude={longitude} />
+                  <Map getMapLocation={setMapLocation} latitude={latitude} longitude={longitude} fixedMarker={false} />
                 </div>
               </div>
             </div>

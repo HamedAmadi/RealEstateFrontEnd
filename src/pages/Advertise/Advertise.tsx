@@ -46,7 +46,7 @@ const Advertise: FC = () => {
             <h6 className="title">موقعیت</h6>
             <div className="map-frame">
               {advertise.latitude ?
-                <Map latitude={advertise.latitude} longitude={advertise.longitude} />
+                <Map latitude={advertise.latitude} longitude={advertise.longitude} fixedMarker={true} />
                 :
                 <p>موقعیت وجود ندارد</p>
               }

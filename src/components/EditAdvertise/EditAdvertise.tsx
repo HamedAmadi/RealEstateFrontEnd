@@ -61,7 +61,7 @@ const EditAdvertise: FC<Props> = ( {toggleModal} ) => {
       <form onSubmit={handleSubmit( onSubmit )} noValidate>
         <div className='d-block fw-bold text-secondary mx-2 mb-1'>موقعیت</div>
         <div className="map-frame">
-          <Map getMapLocation={setMapLocation} latitude={advertise.latitude} longitude={advertise.longitude} />
+          <Map getMapLocation={setMapLocation} latitude={advertise.latitude} longitude={advertise.longitude} fixedMarker={false} />
         </div>
         <Input
           errors={errors}

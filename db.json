@@ -1,4 +1,45 @@
 {
-  "users": [],
-  "advertise": []
+  "users": [
+    {
+      "email": "hamed.amadi7@gmail.com",
+      "password": "$2a$10$DayeoNzgjDEModh5SweLkuYSCxyRbVzDhPCLIU8Zv2C4T4.ESQ51.",
+      "fullName": "حامد آمدی",
+      "id": 1
+    },
+    {
+      "email": "hamed.amadizzz@gmail.com",
+      "password": "$2a$10$6evmteNUOTdZmeN/2bxUue/ylDkRYelit5/qB9JBgD2Xrf6qiKMfW",
+      "fullName": "مجموعه من",
+      "id": 2
+    }
+  ],
+  "advertise": [
+    {
+      "mobileNumber": "09357571542",
+      "address": "سشیشسیشسی\nشسیشسی",
+      "description": "شسیشسیشسی\nشسیشسی",
+      "latitude": 35.699956123626635,
+      "longitude": 51.34752273559571,
+      "userId": "2",
+      "id": 1
+    },
+    {
+      "mobileNumber": "09126266939",
+      "address": "شسیشسی",
+      "description": "شسیشسیشسی",
+      "latitude": 0,
+      "longitude": 0,
+      "userId": "2",
+      "id": 2
+    },
+    {
+      "mobileNumber": "09357571541",
+      "address": "sadasd",
+      "description": "asdasd",
+      "latitude": 35.70522632569671,
+      "longitude": 51.360654830932624,
+      "userId": "1",
+      "id": 3
+    }
+  ]
 }

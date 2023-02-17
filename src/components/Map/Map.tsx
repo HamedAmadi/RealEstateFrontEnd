@@ -14,9 +14,10 @@ type MapProps = {
   getMapLocation?: ( latitude: number, longitude: number ) => void
   latitude: number
   longitude: number
+  fixedMarker: boolean
 }
 
-const Map: FC<MapProps> = ( {getMapLocation, latitude, longitude} ) => {
+const Map: FC<MapProps> = ( {getMapLocation, latitude, longitude, fixedMarker} ) => {
   const center = {
     lat: latitude === 0 ? 35.7165 : latitude,
     lng: longitude === 0 ? 51.4015 : longitude,
@@ -38,10 +39,10 @@ const Map: FC<MapProps> = ( {getMapLocation, latitude, longitude} ) => {
     } )
 
     return (
-      latitude === 0 ?
-        <Marker position={selectedPosition} />
-        :
+      fixedMarker ?
         <Marker position={{lat: latitude, lng: longitude}} />
+        :
+        <Marker position={selectedPosition} />
     )
 
   }
